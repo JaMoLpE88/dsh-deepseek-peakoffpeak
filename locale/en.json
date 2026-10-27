@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek rate clock",
+    "description": "Live DeepSeek peak/off-peak window in the composer: a 24-hour tariff bar, your local windows, the countdown and the official prices. Appears only with a DeepSeek model selected, whatever the provider."
+  }
+}

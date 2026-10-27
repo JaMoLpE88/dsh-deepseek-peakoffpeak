@@ -1,0 +1,72 @@
+{
+  "name": "@jamolpe88/dsh-deepseek-peakoffpeak",
+  "version": "0.1.0",
+  "description": "DeepSeek peak/off-peak rate clock in the DeepSeek Harness composer: a live 24-hour tariff bar, local windows, countdown and the official price table. Appears only with a DeepSeek model selected, whatever the provider. Zero configuration.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "deepseek",
+    "pricing",
+    "peak",
+    "off-peak",
+    "tariffs",
+    "composer"
+  ],
+  "license": "MIT",
+  "author": "JaMoLpE88",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaMoLpE88/dsh-deepseek-peakoffpeak.git"
+  },
+  "homepage": "https://github.com/JaMoLpE88/dsh-deepseek-peakoffpeak#readme",
+  "bugs": {
+    "url": "https://github.com/JaMoLpE88/dsh-deepseek-peakoffpeak/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.3"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*.png",
+    "README.md",
+    "README.es.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "NOTICE",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "test": "node --test"
+  }
+}
