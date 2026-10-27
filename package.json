@@ -1,6 +1,6 @@
 {
   "name": "@jamolpe88/dsh-deepseek-peakoffpeak",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DeepSeek peak/off-peak rate clock in the DeepSeek Harness composer: a live 24-hour tariff bar, local windows, countdown and the official price table. Appears only with a DeepSeek model selected, whatever the provider. Zero configuration.",
   "keywords": [
     "dsh",

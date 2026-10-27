@@ -2,6 +2,12 @@
 
 All notable changes to `@jamolpe88/dsh-deepseek-peakoffpeak` are documented here.
 
+## 0.1.1 — 2026-10-27
+
+- Fixed the centered pill group when a model change adds or removes a pill: a pill that mounted while hidden now joins the group as soon as it becomes visible, so the pills recenter immediately instead of overlapping until the session is reopened.
+- README: added the npm downloads badge.
+- No other runtime changes.
+
 ## 0.1.0 — 2026-10-27
 
 - First release.
