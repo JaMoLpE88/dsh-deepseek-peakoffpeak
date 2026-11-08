@@ -12,10 +12,6 @@ All notable changes to `@jamolpe88/dsh-deepseek-peakoffpeak` are documented here
 - README: added the npm downloads badge.
 - No other runtime changes.
 
-## 0.1.2 — 2026-11-08
-
-- Repository hygiene: removed internal development notes. No functional changes.
-
 ## 0.1.0 — 2026-10-27
 
 - First release.
